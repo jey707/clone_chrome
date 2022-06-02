@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Momentum App</title>
+    <title>TodoList App</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -16,9 +16,12 @@
         </div>
       </div>
       <div class="header_btn">
-        <div>button</div>
-        <div>button</div>
-        <div>button</div>
+        <div id="log-out">
+          <a href="#this">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Log out
+          </a>
+        </div>
       </div>
     </div>
     <div class="contents">
@@ -42,8 +45,8 @@
       </form>
       <ul id="todo-list"></ul>
       <div id="quote">
-        <span></span>
-        <span></span>
+        <div></div>
+        <div></div>
       </div>
     </div>
     <script src="js/greetings.js"></script>
@@ -52,6 +55,7 @@
     <script src="js/backgroud.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/logout.js"></script>
     <script
       src="https://kit.fontawesome.com/0a39842fb4.js"
       crossorigin="anonymous"

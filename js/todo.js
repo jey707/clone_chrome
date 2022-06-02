@@ -34,7 +34,6 @@ function paintToDo(newToDo) {
 
 function deleteToDo(e) {
   const li = e.target.parentElement;
-  console.log(li);
   li.remove();
   toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
   saveToDos();
@@ -48,13 +47,8 @@ toDoForm.addEventListener("submit", handleToDoSubmit);
 
 const savedToDos = localStorage.getItem(TODOS_KEY);
 let parsedToDos = JSON.parse(savedToDos);
-// console.log(savedToDos);
-// console.log(parsedToDos);
-// console.log(parsedToDos.length);
-// console.log(LOCALSTORAGE_ITEM);
 
 if (LOCALSTORAGE_ITEM === null) {
-  console.log(LOCALSTORAGE_ITEM);
   toDoForm.className = "hidden";
 }
 if (savedToDos !== null) {

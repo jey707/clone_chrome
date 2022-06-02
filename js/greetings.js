@@ -1,6 +1,7 @@
 const loginForm = document.querySelector(".login-form");
 const loginInput = document.querySelector(".login-form input");
 const greeting = document.querySelector("#greeting");
+const logOutBtn = document.getElementById("log-out");
 
 const HIDDEN_CLASSNAME = "hidden";
 let LOCALSTORAGE_ITEM = localStorage.getItem("username");
@@ -17,6 +18,7 @@ function onLoginSubmit(event) {
 function paintGreetings() {
   greeting.innerText = `${LOCALSTORAGE_ITEM}'s todoList`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
+  logOutBtn.classList.remove(HIDDEN_CLASSNAME);
 
   let hiddenClass = document
     .getElementById("todo-form")

@@ -16,11 +16,22 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
 }
 
 .header_btn {
   display: flex;
   justify-content: space-between;
+  font-size: 16px;
+  width: 10%;
+}
+.header_btn div a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header_btn div a i {
+  font-size: 22px;
 }
 
 .weather {
@@ -92,6 +103,38 @@ input::placeholder {
   cursor: pointer;
   background-color: rgb(109, 109, 109);
 }
+
+#greeting {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+#quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 2;
+  text-align: center;
+}
 .hidden {
   display: none;
+}
+
+@media (max-width: 475px) {
+  .header .weather {
+    font-size: 18px;
+  }
+  .header_btn {
+    padding: 0 15px;
+  }
+  .header_btn div a {
+    font-size: 12px;
+  }
+  .header_btn div a i {
+    font-size: 18px;
+  }
+  #clock {
+    font-size: 70px;
+  }
 }
